@@ -11,7 +11,7 @@ from customdataset import *
 from depthmodel import depthmodel
 from train import train, casetrain
 from inference import inference
-from casemodel import casemodel
+from casemodel import Casemodel
 
 # %% datasets path
 CASE_BEST_MODEL_PATH = 'datasets/case_best_model.pth'
@@ -46,7 +46,7 @@ CFG = {
 seed_everything(CFG['SEED'])  # Seed 고정
 
 # %%model setting
-case_model = casemodel()
+case_model = Casemodel()
 case_model = case_model.to(device)
 case_model.eval()
 
@@ -78,7 +78,7 @@ scheduler = None
 
 # %%
 case_checkpoint = torch.load(CASE_BEST_MODEL_PATH)
-case_model = casemodel()
+case_model = Casemodel()
 case_model = case_model.to(device)
 case_model.load_state_dict(case_checkpoint)
 
@@ -120,7 +120,7 @@ model4 = model4.to(device)
 model4.load_state_dict(checkpoint)
 
 case_checkpoint = torch.load(CASE_BEST_MODEL_PATH)
-case_model = casemodel()
+case_model = Casemodel()
 case_model = case_model.to(device)
 case_model.load_state_dict(case_checkpoint)
 
@@ -175,7 +175,7 @@ model4 = model4.to(device)
 model4.load_state_dict(checkpoint)
 
 case_checkpoint = torch.load(CASE_BEST_MODEL_PATH)
-case_model = casemodel()
+case_model = Casemodel()
 case_model = case_model.to(device)
 case_model.load_state_dict(case_checkpoint)
 

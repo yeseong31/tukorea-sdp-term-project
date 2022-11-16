@@ -10,9 +10,9 @@ print(device)
 
 
 # %%
-class casemodel(nn.Module):
+class Casemodel(nn.Module):
     def __init__(self):
-        super(casemodel, self).__init__()
+        super(Casemodel, self).__init__()
         self.fc1 = nn.Sequential(
             nn.Conv2d(1, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=True),
             nn.ReLU(),
@@ -51,7 +51,7 @@ class casemodel(nn.Module):
 
 # %%
 """
-model=casemodel()
+model=Casemodel()
 model=model.to(device)
 model.eval()
 summary(model, input_size=(1,72,48), device=device.type)
