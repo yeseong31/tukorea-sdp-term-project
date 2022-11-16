@@ -20,8 +20,6 @@
 - **sample_submission.zip (제출 양식) - 총 25988개**
     - 실제 Hole 단위 SEM 영상으로부터 추론한 Depth Map (PNG 파일)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5b47e133-3d36-4f0f-b0ab-824f55a4b270/Untitled.png)
-
 - **학습이 가능한 데이터**
     - Train Dataset의 **Real SEM Hole** 영상
         - Simulation SEM Hole 영상과 비슷하지만, 대응관계는 없음
@@ -31,5 +29,3 @@
         - 매칭되는 Depth Map으로부터 Simulator를 통해 생성된 영상
         - 즉, Simulation 폴더 내 Depth Map과 매칭되는 Simulation SEM Hole 영상은 대응관계가 존재함
 - 실제 추론은 Real SEM Hole 영상으로만 이루어짐
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7d35dd30-0ce9-4b2b-8b27-212a8b82c274/Untitled.png)
