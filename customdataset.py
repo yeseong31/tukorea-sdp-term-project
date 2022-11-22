@@ -179,16 +179,15 @@ class CaseDataset(Dataset):
                     temp[i, j] = temp[i, j] + 4
         sem_img = np.array(temp)
         sem_img = sem_img / 255.
+
         if sem_path.split('/')[-3] == "Case_1" or sem_path.split('/')[-3] == "Depth_110":
             case_name = 0
-
-        if sem_path.split('/')[-3] == "Case_2" or sem_path.split('/')[-3] == "Depth_120":
+        elif sem_path.split('/')[-3] == "Case_2" or sem_path.split('/')[-3] == "Depth_120":
             case_name = 1
-
-        if sem_path.split('/')[-3] == "Case_3" or sem_path.split('/')[-3] == "Depth_130":
+        elif sem_path.split('/')[-3] == "Case_3" or sem_path.split('/')[-3] == "Depth_130":
             case_name = 2
-
-        if sem_path.split('/')[-3] == "Case_4" or sem_path.split('/')[-3] == "Depth_140":
+        # if sem_path.split('/')[-3] == "Case_4" or sem_path.split('/')[-3] == "Depth_140":
+        else:
             case_name = 3
 
         return torch.Tensor(sem_img).unsqueeze(0), case_name  # C,B,H,W.unsqueeze(0)
