@@ -1,4 +1,5 @@
 ![Python](https://img.shields.io/badge/Python-3.8.15-3670A0?style=flat-square&logo=python&logoColor=ffdd54)
+![Anaconda](https://img.shields.io/badge/Anaconda-%2344A833.svg?style=flat-square&logo=anaconda&logoColor=white)
 ![PyCharm](https://img.shields.io/badge/PyCharm-143?style=flat-square&logo=pycharm&logoColor=black&color=black&labelColor=green)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.6.0-%23FF6F00.svg?style=flat-square&logo=TensorFlow&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-1.13.0-%23EE4C2C.svg?style=flat-square&logo=PyTorch&logoColor=white)
