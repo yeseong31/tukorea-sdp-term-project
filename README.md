@@ -1,3 +1,8 @@
+![Python](https://img.shields.io/badge/Python-3.8.15-3670A0?style=flat-square&logo=python&logoColor=ffdd54)
+![PyCharm](https://img.shields.io/badge/PyCharm-143?style=flat-square&logo=pycharm&logoColor=black&color=black&labelColor=green)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.6.0-%23FF6F00.svg?style=flat-square&logo=TensorFlow&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-1.13.0-%23EE4C2C.svg?style=flat-square&logo=PyTorch&logoColor=white)
+
 # sdp-term-project
 
 [2022 Samsung AI Challenge (3D Metrology)](https://dacon.io/competitions/official/235954/overview/description)
